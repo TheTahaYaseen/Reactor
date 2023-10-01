@@ -1,0 +1,32 @@
+:root{
+    --color-primary: #0B0930;
+    --color-primary-light: #1A1A64;
+    --color-primary-variant: #2C2A89;
+    
+    --color-red: #FF4500;
+    --color-red-light: #FFA07A;
+    
+    --color-green: #00FF00;
+    --color-green-light: #00FF7F;
+    
+    --color-grey-900: #808080;
+    --color-grey-700: #C0C0C0;
+    --color-grey-300: #B0B0B0;
+    --color-grey-200: #A0A0A0;
+    
+    --color-white: #FFFFFF;
+    --color-bg: #191970;
+
+    --transition: all 300ms ease;
+
+    --container-width-lg: 74%;
+    --container-width-md: 88%;
+    --form-width: 40%;
+
+    --card-border-radius-1: 0.3rem;
+    --card-border-radius-2: 0.5rem;
+    --card-border-radius-3: 0.8rem;
+    --card-border-radius-4: 2rem;
+    --card-border-radius-5: 5rem;
+}
+
