@@ -259,3 +259,19 @@ nav button{
 
 /* End Of Posts Section */
 
+/* Categories Section */
+
+.category_buttons{
+    padding: 4rem 0;
+    border-top: 2px solid var(--color-grey-900);
+    border-bottom: 2px solid var(--color-grey-900);
+}
+
+.category_buttons_container{
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+}
+
+/* End Of Categories Section */
