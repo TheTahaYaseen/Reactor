@@ -227,3 +227,35 @@ nav button{
     overflow: hidden;
 }
 
+/* End Of General Post Styles */
+
+/* Featured  */
+
+.featured{
+    margin-top: 8rem;
+}
+
+.featured_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem
+}
+
+.featured .post_thumbnail{
+    height: fit-content;
+}
+
+/* End Of Featured */
+
+/* Posts Section */
+
+.posts_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+/* End Of Posts Section */
+
