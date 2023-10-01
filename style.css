@@ -1,6 +1,6 @@
 :root{
     --color-primary: #191970;
-    --color-primary-light: #1A1A64;
+    --color-primary-light: #5A5AA8;
     --color-primary-variant: #2C2A89;
     
     --color-red: #FF4500;
@@ -29,6 +29,8 @@
     --card-border-radius-4: 2rem;
     --card-border-radius-5: 5rem;
 }
+
+/* General Styling */
 
 *{
     margin: 0;
@@ -95,6 +97,10 @@ img{
     width: 100%;
     object-fit: cover;
 }
+
+/* End Of General Styling */
+
+/* Navigation */
 
 nav{
     background-color: var(--color-primary);
@@ -172,3 +178,52 @@ nav button{
     background-color: var(--color-red);
     color: var(--color-bg);
 }
+
+/* End Of Navigation */
+
+/* Category Button */
+
+.category_button{
+    background: var(--color-primary);
+    color: var(--color-primary-light);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: var(--card-border-radius-2);
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.category_button:hover{
+    color: var(--color-white);
+}
+
+/* End Of Category Button */
+
+/* General Post Styles */
+
+.post_thumbnail{
+    border-radius: var(--card-border-radius-5) 0;
+    border: 1rem solid var(--color-grey-900);
+    overflow: hidden;
+    margin: 1.6rem;
+}
+
+.post:hover .post_thumbnail img{
+    filter: saturate(0);
+    transition: filter 500ms ease;
+}
+
+.post_author{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+
+.post_author_avatar{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: var(--card-border-radius-3);
+    overflow: hidden;
+}
+
