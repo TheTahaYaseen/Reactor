@@ -1,5 +1,5 @@
 :root{
-    --color-primary: #0B0930;
+    --color-primary: #191970;
     --color-primary-light: #1A1A64;
     --color-primary-variant: #2C2A89;
     
@@ -9,13 +9,13 @@
     --color-green: #00FF00;
     --color-green-light: #00FF7F;
     
-    --color-grey-900: #808080;
-    --color-grey-700: #C0C0C0;
-    --color-grey-300: #B0B0B0;
-    --color-grey-200: #A0A0A0;
+    --color-grey-900: #3B3B6E;
+    --color-grey-700: #4C4C80;
+    --color-grey-300: #666699;
+    --color-grey-200: #7A7AB3;
     
     --color-white: #FFFFFF;
-    --color-bg: #191970;
+    --color-bg: #0B0930;
 
     --transition: all 300ms ease;
 
@@ -42,5 +42,133 @@
 }
 
 body{
-    
+    font-family: "Montserrat", "sans-serif";
+    line-height: 1.6;
+    color: var(--color-grey-900);
+    overflow-x: hidden;
+    background-color: var(--color-bg);
+    font-size: 0.9rem;
+}
+
+.container{
+    width: var(--container-width-lg);
+    max-width: 1800px;
+    margin-inline: auto;
+}
+
+.section{
+    margin-top: 3rem;
+    width: 100vw;
+}
+
+h1, h2, h3, h4, h5{
+    color: var(--color-white);
+    line-height: 1.3x;
+}
+
+h1{
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+h2{
+    font-size: 1.7rem;
+    margin: 1rem 0;
+}
+
+h3{
+    font-size: 1.1rem;
+    margin: 0.8rem 0 0.5rem;
+}
+
+h4{
+    font-size: 1rem;
+}
+
+a{
+    color: var(--color-white);
+    transition: var(var(--transition));
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+nav{
+    background-color: var(--color-primary);
+    width: 100vw;
+    height: 4.5rem;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+nav button{
+    display: none;
+}
+
+.nav_container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avatar{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 0.3rem solid var(--color-bg);
+}
+
+.nav_logo{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.nav_items{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nav_profile{
+    position: relative;
+    cursor: pointer;
+}
+
+.nav_profile ul {
+    position: absolute;
+    top: 125%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.4);
+    background: var(--color-bg);
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+/* Showing Profile Navigation When Hovered */
+
+.nav_profile:hover > ul{
+    visibility: visible;
+    opacity: 1;
+}
+
+.nav_profile ul li a{
+    padding: 1rem;
+    background: var(--color-grey-900);
+    display: block;
+    width: 100%;
+}
+
+.nav_profile ul li:last-child a{
+    background-color: var(--color-red);
+    color: var(--color-bg);
 }
